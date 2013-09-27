@@ -67,11 +67,15 @@ npm test
 
 ## Samples
 
-TBD
+- [Primes](https://github.com/ajlopez/SimpleBot/tree/master/samples/primes) a prime number detector
 
 ## License
 
 MIT
+
+## Versions
+
+- 0.0.1: Published
 
 ## Contribution
 
