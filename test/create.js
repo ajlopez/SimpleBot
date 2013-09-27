@@ -1,0 +1,1 @@
+var simplebot = require('..');exports['createBot as function'] = function (test) {    test.ok(simplebot.createBot);    test.equal(typeof simplebot.createBot, 'function');};exports['create bot'] = function (test) {    var bot = simplebot.createBot();    test.ok(bot);};
