@@ -18,7 +18,43 @@ Reference in your program:
 ```js
 var simpletbot = require('simplebot');
 ```
-TBD
+
+Create, configure and launch a bot:
+```js
+var bot = simplebot.createBot();
+
+bot.use(plugin1);
+bot.use(plugin2);
+bot.use(plugin3);
+
+bot.start();
+```
+
+A plugin can:
+
+- Produce message to be processed by the bot and its plugins
+- Emit outcoming message using the bot
+- Subscribe to incoming message to the bot
+
+## Writing a plugin
+
+A plugin is an object with methods:
+
+- `.initialize(bot)` called when the plugin is added to the bot
+- `.start()` called when `bot.start()` is called
+- `.stop()` called when `bot.stop()` is called
+
+Your plugin code can access and use all the Node.js ecosystem. It can call these bot methods:
+
+- `bot.process(msg)` sending a message (simple number, string, object) to be processed by bot and its plugins, in asynchronous way
+- `bot.emit(msg)` emitting an outcoming message using the bot
+
+Some plugins can subscribe to incoming message, or can be interested in process the outcoming messages:
+
+- `bot.emitter(fn)` registering a function that receives a `msg` parameter for each message emitted by the bot and its plugins
+- `bot.subscribe(fn)` registering a function that receives and process a `msg` parameter for each message received by the bot
+
+See the test and samples folders for more detailed use cases.
 
 ## Development
 

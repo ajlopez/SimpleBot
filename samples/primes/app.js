@@ -41,7 +41,6 @@ var primes = {
         bot.subscribe(function (number) { 
             processNumber(number, bot); 
         }); 
-        this.bot = bot; 
     },
     start: function () { 
         console.log("Starting prime detector"); 
