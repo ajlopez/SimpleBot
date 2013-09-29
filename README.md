@@ -77,6 +77,10 @@ MIT
 
 - 0.0.1: Published
 
+## References
+
+- [Build IRC Bots with Node.js](http://davidwalsh.name/nodejs-irc)
+
 ## Contribution
 
 Feel free to [file issues](https://github.com/ajlopez/SimpleBot) and submit
