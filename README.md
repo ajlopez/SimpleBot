@@ -80,6 +80,8 @@ MIT
 ## References
 
 - [Build IRC Bots with Node.js](http://davidwalsh.name/nodejs-irc)
+- [How to make a Twitter bot](http://tinysubversions.com/2013/09/how-to-make-a-twitter-bot/)
+- [A simple example Twitter bot using NodeJS](https://github.com/dariusk/examplebot)
 
 ## Contribution
 
